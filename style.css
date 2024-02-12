@@ -139,6 +139,9 @@
     font-size:2.5rem;
     font-weight:600;
   }
+  .header .branding span{
+    color:#ffa700;
+  }
   .header .header__nav ul li a{
     color:#ffffff;
     font-size:2rem;
