@@ -809,7 +809,7 @@
 .updates__wrapper{
   display:grid;
   grid-template-columns:2.5fr 1.5fr;
-  grid-gap:5rem;
+  grid-gap:6rem;
 }
 .updates__left ul{
   display:flex;
@@ -889,7 +889,7 @@
 }
 .updates__tags ul li{
   display:flex;
-  padding-top:2rem;
+  padding-top:1.5rem;
   font-size:2.2rem;
 }
 .updates__tags ul li .web{
@@ -948,6 +948,115 @@
     padding:5rem 0;
     border-bottom:0.5px solid gray;
   }
+}
+/* CONTACTS */
+.header.shadow{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.contacts{
+  padding-top:15rem;
+  padding-bottom:2rem;
+  background:var(--dark);
+}
+.contacts__title h1{
+  font-size:4rem;
+  font-weight:700;
+  color:var(--primary);
+}
+.contacts__left p{
+  padding:3.5rem 0;
+  color:var(--light);
+}
+.contacts__wrapper{
+  display:grid;
+  grid-template-columns:2.5fr 1.5fr;
+  grid-gap:5rem;
+}
+.contacts__sc ul{
+  padding:3rem 0;
+  align-items:left;
+  display:flex;
+  color:var(--light);
+}
+.contacts__info ul li{
+  height:5rem;
+  padding:1rem;
+  display:flex;
+  align-items:center;
+  gap:4rem;
+  max-width:45rem;
+  color:var(--light);
+}
+.contacts__sc ul li a{
+  color:var(--light);
+  font-size:2rem;
+}
+.contacts__info ul li i{
+  color:var(--primary);
+}
+.contacts__right{
+  display:flex;
+  flex-direction:column;
+}
+.contacts__right .inputs ul li{
+  display:flex;
+  flex-direction:column;
+  height:5rem;
+  padding-left:5rem;
+}
+.inputs ul{
+  padding:4rem 0;
+}
+.inputs ul li input{
+  padding:1rem 2rem;
+}
+textarea{
+  width: 65rem;
+  height: 200rem;
+  resize: none;
+  padding: 2rem;
+  padding-bottom:9rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  overflow:hidden
+}
+.contacts__right .sendmessage{
+  padding:2rem 0;
+  display:flex;
+  justify-content:flex-end;
+  padding:7rem 0;
+}
+.contacts__right .sendmessage a{
+  padding:1.5rem;
+}
+.footer{
+  padding-top:1rem;
+  border-top:1px solid gray;
+}
+@media screen and (max-width:486px){
+  .contacts__wrapper{
+    display:flex;
+    flex-direction:column;
+    gap:0;
+  }
+  .contacts__right .inputs ul li{
+    flex-direction:column;
+    height:5rem;
+    padding:1rem;
+  }
+  .inputs ul li span input{
+    padding-right:24.5rem;
+    padding-bottom:10rem;
+  }
+  .contacts__right .sendmessage{
+    display:flex;
+    justify-content:center;
+    padding-top:10rem;
+    padding-bottom:4rem;
+  }
+}
+textarea{
+  width: 43.5rem;
 }
 
 /* CNT */
@@ -1022,10 +1131,9 @@ align-items:center;
 }
 .footer__social ul{
   display:flex;
-  gap:2rem;
 }
 .footer__wrapper p{
-  font-size:1.5rem;
+  font-size:2rem;
 }
 
 @media screen and (max-width:486px){
